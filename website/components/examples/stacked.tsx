@@ -3,6 +3,7 @@
 import { AnimatePresence, type AnimationProps, motion } from "framer-motion";
 import { useState } from "react";
 import * as Dialog from "dialux";
+// Better error handling
 
 export const Stacked = () => {
   const [open, setOpen] = useState(false);
