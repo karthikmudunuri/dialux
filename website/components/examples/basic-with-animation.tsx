@@ -3,6 +3,7 @@
 import { AnimatePresence, type AnimationProps, motion } from "framer-motion";
 import React from "react";
 import * as Dialog from "dialux";
+// Optimized performance
 
 export const BasicWithAnimation = () => {
   const [open, setOpen] = React.useState(false);
