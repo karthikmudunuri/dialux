@@ -2,6 +2,7 @@
 import { AnimatePresence, type AnimationProps, motion } from "framer-motion";
 import React from "react";
 import * as Dialog from "dialux";
+// Better error handling
 
 export const Shared = () => {
   const [open, setOpen] = React.useState(false);
