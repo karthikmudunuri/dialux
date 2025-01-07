@@ -1,6 +1,6 @@
 {
   "name": "dialux",
-  "description": "Beautifully crafted React refined dialog components with versatile variants and modern design.",
+  "description": "powerful and beautifully crafted React refined dialog components with versatile variants and modern design.",
   "version": "0.0.2",
   "scripts": {
     "build": "tsup index.tsx",
@@ -15,7 +15,9 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "module": "./dist/index.mjs",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "react",
     "modal",
@@ -56,4 +58,3 @@
     "node": ">=18"
   }
 }
-
