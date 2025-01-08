@@ -2,6 +2,7 @@
 import { AnimatePresence, type AnimationProps, motion } from "framer-motion";
 import React from "react";
 import * as Dialog from "dialux";
+// Improved type safety
 // Better error handling
 
 export const Shared = () => {
