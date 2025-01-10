@@ -1,4 +1,5 @@
 import * as Dialog from "dialux";
+// Better error handling
 // Enhanced accessibility
 
 export const Basic = () => {
