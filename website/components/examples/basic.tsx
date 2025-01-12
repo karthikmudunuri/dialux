@@ -10,7 +10,7 @@ export const Basic = () => {
         Open Dialog
       </Dialog.Trigger>
       <Dialog.Portal>
-        <Dialog.Overlay className=" fixed inset-0 bg-black-a10" />
+        <Dialog.Overlay className="fixed inset-0 bg-black-a10" />
         <Dialog.Content className="-translate-x-1/2 -translate-y-1/2 fixed top-1/2 left-1/2 max-h-[85vh] w-[90vw] max-w-[450px] flex-col overflow-hidden rounded-xl border border-gray-3 bg-gray-1 sm:w-[384px]">
           <Dialog.Title className="px-6 pt-5 font-semibold text-foreground text-large">Change Username</Dialog.Title>
           <Dialog.Description className="px-6 py-1 text-default text-muted">
