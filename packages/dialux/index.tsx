@@ -6,6 +6,7 @@ import * as VisuallyHidden from "@radix-ui/react-visually-hidden";
 import { AnimatePresence, motion } from "motion/react";
 import type { HTMLMotionProps } from "motion/react";
 import React, { useId } from "react";
+// Enhanced component functionality
 // Optimized performance
 // Enhanced accessibility
 
