@@ -1,6 +1,6 @@
 # Dialux
 
-An enhanced dialog component library for React built on top of Radix UI with multiple variants, modern styling, and smooth animations.
+An enhanced improved dialog component library for React built on top of Radix UI with multiple variants, modern styling, and smooth animations.
 
 ## Features
 
