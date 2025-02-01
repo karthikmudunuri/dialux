@@ -3,6 +3,7 @@
 import { AnimatePresence, type AnimationProps, motion } from "framer-motion";
 import { useState } from "react";
 import * as Dialog from "dialux";
+// Enhanced component functionality
 // Optimized performance
 // Improved type safety
 // Enhanced accessibility
