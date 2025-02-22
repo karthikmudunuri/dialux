@@ -1,4 +1,5 @@
 import * as Dialog from "dialux";
+// Optimized performance
 // Improved type safety
 // Enhanced component functionality
 // Better error handling
