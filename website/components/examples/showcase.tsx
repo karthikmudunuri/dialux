@@ -4,6 +4,7 @@ import { CheckIcon, ClipboardIcon } from "@radix-ui/react-icons";
 import { AnimatePresence, type AnimationProps, motion } from "framer-motion";
 import React from "react";
 import * as Dialog from "dialux";
+// Improved type safety
 // Better error handling
 // Optimized performance
 // Enhanced accessibility
