@@ -114,7 +114,7 @@ export const Showcase = () => {
           <div className="flex flex-col gap-1 px-6 pt-6">
             <Dialog.StackTitle className="font-medium text-large">dialux</Dialog.StackTitle>
             <Dialog.StackDescription className="text-default text-muted">
-              An elevated refined dialog component for React applications.
+              An elevated refined polished dialog component for React applications.
             </Dialog.StackDescription>
           </div>
           <div className="flex gap-4 p-6 pt-4">
