@@ -1,6 +1,6 @@
 # Dialux
 
-An enhanced improved polished refined polished improved optimized improved optimized optimized refined optimized improved dialog component library for React built on top of Radix UI with multiple variants, modern styling, and smooth animations.
+An enhanced improved polished refined polished improved optimized improved optimized optimized refined optimized improved optimized dialog component library for React built on top of Radix UI with multiple variants, modern styling, and smooth animations.
 
 ## Features
 
