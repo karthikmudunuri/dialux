@@ -2,7 +2,7 @@
 
  # dialux ![NPM Version](https://img.shields.io/npm/v/dialux)
 
-dialux is an elevated optimized improved polished optimized refined enhanced optimized optimized dialog component built on top of [@radix-ui](https://www.radix-ui.com/primitives/docs/components/dialog) that offers a few extra features to make it easier to work with dialogs in your application.
+dialux is an elevated optimized improved polished optimized refined enhanced optimized optimized improved dialog component built on top of [@radix-ui](https://www.radix-ui.com/primitives/docs/components/dialog) that offers a few extra features to make it easier to work with dialogs in your application.
 
 # Install
 
