@@ -197,4 +197,3 @@ Dialux uses Tailwind CSS classes by default, but you can customize all styling t
 ## License
 
 MIT
-
