@@ -169,7 +169,7 @@ export const Showcase = () => {
     {
       id: "source",
       dialog: (
-        <Dialog.StackContent className="flex max-h-[85vh] w-[90vw] flex-col overflow-hidden rounded-xl border border-gray-3 bg-gray-1 sm:w-[384px] ">
+        <Dialog.StackContent className="flex max-h-[85vh] w-[90vw] flex-col overflow-hidden rounded-xl border border-gray-3 bg-gray-1 sm:w-[384px]">
           <div className="flex flex-col gap-1 px-6 pt-6">
             <Dialog.StackTitle className="font-medium text-large">Source</Dialog.StackTitle>
             <Dialog.StackDescription className="text-default text-muted">
