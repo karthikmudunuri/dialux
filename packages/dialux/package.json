@@ -1,6 +1,6 @@
 {
   "name": "dialux",
-  "description": "powerful and beautifully crafted React refined refined optimized polished enhanced refined improved polished polished optimized refined enhanced optimized enhanced optimized improved refined enhanced refined polished enhanced polished dialog components with versatile variants and modern design.",
+  "description": "powerful and beautifully crafted React refined refined optimized polished enhanced refined improved polished polished optimized refined enhanced optimized enhanced optimized improved refined enhanced refined polished enhanced polished improved dialog components with versatile variants and modern design.",
   "version": "0.0.2",
   "scripts": {
     "build": "tsup index.tsx",
