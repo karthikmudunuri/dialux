@@ -1,0 +1,328 @@
+/* gray */
+@import url("@radix-ui/colors/gray.css");
+@import url("@radix-ui/colors/gray-alpha.css");
+@import url("@radix-ui/colors/gray-dark.css");
+@import url("@radix-ui/colors/gray-dark-alpha.css");
+
+/* green */
+@import url("@radix-ui/colors/green.css");
+@import url("@radix-ui/colors/green-alpha.css");
+@import url("@radix-ui/colors/green-dark.css");
+@import url("@radix-ui/colors/green-dark-alpha.css");
+
+/* pink */
+@import url("@radix-ui/colors/pink.css");
+@import url("@radix-ui/colors/pink-alpha.css");
+@import url("@radix-ui/colors/pink-dark.css");
+@import url("@radix-ui/colors/pink-dark-alpha.css");
+
+/* red */
+@import url("@radix-ui/colors/red.css");
+@import url("@radix-ui/colors/red-alpha.css");
+@import url("@radix-ui/colors/red-dark.css");
+@import url("@radix-ui/colors/red-dark-alpha.css");
+
+/* blue */
+@import url("@radix-ui/colors/blue.css");
+@import url("@radix-ui/colors/blue-alpha.css");
+@import url("@radix-ui/colors/blue-dark.css");
+@import url("@radix-ui/colors/blue-dark-alpha.css");
+
+/* yellow */
+@import url("@radix-ui/colors/yellow.css");
+@import url("@radix-ui/colors/yellow-alpha.css");
+@import url("@radix-ui/colors/yellow-dark.css");
+@import url("@radix-ui/colors/yellow-dark-alpha.css");
+
+/* overlays */
+@import url("@radix-ui/colors/black-alpha.css");
+@import url("@radix-ui/colors/white-alpha.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: var(--gray-1);
+    --fg: var(--gray-12);
+    --muted: var(--gray-8);
+    --border: var(--gray-4);
+    --scrollbar-thumb: var(--gray-4);
+    --scrollbar-track: transparent;
+    --selection-background: var(--pink-3);
+    --selection-foreground: var(--pink-11);
+    --kbd-background: var(--gray-3);
+    --kbd-foreground: var(--gray-11);
+    --kbd-border: var(--gray-4);
+    --highlight-background: var(--yellow-3);
+    --highlight-foreground: var(--yellow-11);
+    --radius-small: 4px;
+    --radius-base: 8px;
+    --radius-large: 12px;
+  }
+
+  * {
+    --webkit-font-smoothing: antialiased;
+    --moz-osx-font-smoothing: grayscale;
+
+    font-variant-ligatures: common-ligatures;
+    text-rendering: optimizelegibility;
+  }
+
+  *::selection {
+    color: var(--selection-foreground);
+    background-color: var(--selection-background);
+  }
+
+  iframe::-webkit-scrollbar {
+    display: none;
+  }
+
+  html {
+    scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+  }
+
+  html {
+    @apply text-default text-foreground bg-background font-normal;
+
+    h1,
+    h2,
+    p {
+      @apply text-default;
+    }
+
+    h1,
+    h2,
+    h3 {
+      @apply font-medium;
+    }
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      @apply font-normal;
+    }
+
+    sub {
+      @apply text-small;
+    }
+
+    a {
+      @apply transition hover:opacity-50;
+    }
+
+    ol {
+      @apply list-decimal;
+    }
+
+    ul {
+      @apply list-disc;
+    }
+
+    kbd {
+      @apply mx-1;
+
+      display: inline-block;
+      min-width: 20px;
+      height: 20px;
+      min-height: 20px;
+      padding: 0 6px;
+      font-size: 12px;
+      line-height: 20px;
+      text-align: center;
+      background: var(--kbd-background);
+      border-radius: 4px;
+      box-shadow: 0 0 0 1px var(--kbd-border);
+    }
+  }
+
+  article {
+    h1 + h2 {
+      margin-top: 4px !important;
+    }
+
+    h1 + p,
+    h2 + p {
+      margin-top: 4px !important;
+    }
+
+    figure + h1,
+    p + h1 {
+      margin-top: 48px !important;
+    }
+
+    p:not(:first-child),
+    h1:not(:first-child),
+    h2:not(:first-child),
+    h3:not(:first-child),
+    h4:not(:first-child),
+    h5:not(:first-child),
+    h6:not(:first-child),
+    blockquote:not(:first-child),
+    ul:not(:first-child),
+    ol:not(:first-child),
+    pre:not(:first-child),
+    figure:not(:first-child) {
+      margin-top: 24px;
+    }
+
+    [data-highlight] {
+      @apply relative;
+    }
+
+    [data-highlight]::before {
+      @apply absolute inset-0 -inset-x-1 -z-[1] bg-transparent transition scale-y-[1.1] content-[""] duration-500;
+    }
+
+    [data-highlight="true"]::before {
+      @apply bg-highlight-background text-highlight-foreground scale-y-110 !important;
+    }
+
+    [data-highlight="false"]::before {
+      @apply bg-transparent scale-y-100;
+    }
+
+    .footnotes {
+      position: relative;
+      padding-top: 16px;
+      margin-top: 64px !important;
+      border-top: 1px solid var(--border);
+    }
+
+    .footnotes ol {
+      position: relative;
+      display: block;
+      padding: 0 0 0 4px;
+      margin-top: 16px !important;
+      list-style: none;
+    }
+
+    .footnotes li {
+      margin-top: 0 !important;
+    }
+
+    .footnotes ol li {
+      position: relative;
+      padding-top: 4px;
+      padding-left: 6px;
+      font-size: 12px;
+      color: var(--muted);
+      counter-increment: list;
+    }
+
+    .footnotes ol li::before {
+      position: absolute;
+      top: 0;
+      right: 100%;
+      font-size: 8px;
+      content: counter(list);
+    }
+
+    .footnotes ol li p a {
+      z-index: 2;
+    }
+  }
+
+  html {
+    code[data-theme*=" "],
+    code[data-theme*=" "] span {
+      color: var(--shiki-light);
+      background-color: var(--shiki-light-bg);
+    }
+
+    &.dark {
+      code[data-theme*=" "],
+      code[data-theme*=" "] span {
+        color: var(--shiki-dark);
+        background-color: var(--shiki-dark-bg);
+      }
+    }
+  }
+
+  html {
+    code[data-line-numbers] {
+      counter-reset: line;
+    }
+
+    code[data-line-numbers] > [data-line]::before {
+      counter-increment: line;
+      content: counter(line);
+
+      display: inline-block;
+      width: 12px;
+      margin-right: 24px;
+      color: var(--muted);
+      text-align: right;
+      content: counter(line);
+      counter-increment: line;
+    }
+
+    code[data-line-numbers-max-digits="2"] > [data-line]::before {
+      width: 16px;
+    }
+
+    code[data-line-numbers-max-digits="3"] > [data-line]::before {
+      width: 24px;
+    }
+
+    code[data-line-numbers-max-digits="4"] > [data-line]::before {
+      width: 32px;
+    }
+
+    p [data-line] {
+      padding: 2px 4px;
+      margin-right: 2px;
+      margin-left: 2px;
+      text-align: center;
+      border-radius: 4px;
+    }
+
+    code {
+      span[data-line] {
+        @apply text-small;
+      }
+    }
+  }
+
+  * {
+    figure {
+      width: 100%;
+      margin-top: 4px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-base);
+      overflow: hidden;
+    }
+
+    pre {
+      padding: 16px;
+      font-size: 12px;
+      overflow-x: auto;
+      max-height: 384px;
+
+      [data-line] {
+        margin-top: 0 !important;
+      }
+    }
+
+    [data-highlighted-line] {
+      position: relative;
+      z-index: 0;
+
+      ::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -16px;
+        right: 0;
+        bottom: 0;
+        background-color: var(--highlight-background);
+        box-shadow: inset 1px 0 0 var(--highlight-foreground);
+        z-index: -1;
+      }
+    }
+  }
+}
