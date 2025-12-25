@@ -1,0 +1,11 @@
+node_modules
+.git
+.gitignore
+tsconfig.json
+tsup.config.ts
+biome.json
+*.log
+.DS_Store
+.idea
+.vscode
+

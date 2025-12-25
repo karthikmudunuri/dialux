@@ -1,0 +1,59 @@
+{
+  "name": "dialux",
+  "description": "An enhanced dialog component library for React with multiple variants and modern styling",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsup index.tsx",
+    "dev": "tsup index.tsx --watch --silent",
+    "lint": "biome check --fix --unsafe ."
+  },
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "module": "./dist/index.mjs",
+  "files": ["dist"],
+  "keywords": [
+    "react",
+    "modal",
+    "dialog",
+    "sheet",
+    "drawer",
+    "alert",
+    "confirm",
+    "overlay",
+    "motion",
+    "radix-ui",
+    "animated",
+    "component-library"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.2",
+    "@radix-ui/react-primitive": "^2.0.0",
+    "@radix-ui/react-visually-hidden": "^1.1.0",
+    "motion": "^11.0.0",
+    "react": "^18.0.0 || ^19.0.0"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/react": "^18.0.0 || ^19.0.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.6.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
+
