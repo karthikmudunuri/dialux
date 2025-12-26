@@ -1,7 +1,7 @@
 "use client";
 import { AnimatePresence, type AnimationProps, motion } from "framer-motion";
 import React from "react";
-import * as Dialog from "toldo";
+import * as Dialog from "dialux";
 
 export const Shared = () => {
   const [open, setOpen] = React.useState(false);
@@ -33,7 +33,7 @@ export const Shared = () => {
           className="pointer-events-auto flex h-[32px] items-center rounded-lg border border-gray-3 bg-gradient-to-t bg-gray-1 from-gray-1 to-gray-2 px-3"
           {...variants.button}
         >
-          Open Dialog
+          Open Shared
         </Dialog.SharedItem>
       </Dialog.Trigger>
 
@@ -57,7 +57,7 @@ export const Shared = () => {
                 <fieldset className="mb-[15px] flex items-center gap-4 px-6 py-4">
                   <input
                     id="name"
-                    placeholder="@raphaelsalaja"
+                    placeholder="@karthikmudunuri"
                     className="inline-flex h-[32px] w-full flex-1 items-center justify-center rounded-lg border border-gray-4 bg-gray-2 px-2.5 text-[15px] text-default leading-none transition-all placeholder:text-muted focus:outline-none focus:ring-1 focus:ring-green-11 focus:ring-offset-2 focus:ring-offset-gray-1"
                   />
                 </fieldset>

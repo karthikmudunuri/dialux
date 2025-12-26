@@ -3,9 +3,7 @@
 import { CheckIcon, ClipboardIcon } from "@radix-ui/react-icons";
 import { AnimatePresence, type AnimationProps, motion } from "framer-motion";
 import React from "react";
-import * as Dialog from "toldo";
-
-const src = "https://images.beta.cosmos.so/9b9a064c-f9f2-4b9b-8130-51935048c54b?format=jpeg";
+import * as Dialog from "dialux";
 
 const variants: { [key: string]: AnimationProps } = {
   overlay: {
@@ -35,7 +33,7 @@ const CodeBlock = () => {
     if (copied) {
       const timeout = setTimeout(() => {
         setCopied(false);
-        navigator.clipboard.writeText("pnpm install toldo");
+        navigator.clipboard.writeText("pnpm install dialux");
       }, 2000);
       return () => clearTimeout(timeout);
     }
@@ -43,7 +41,7 @@ const CodeBlock = () => {
 
   return (
     <pre className="flex h-[32px] items-center justify-between rounded-lg border border-gray-4 bg-gray-2 py-0 pr-2 pl-3">
-      <code className="language-jsx">{"pnpm install toldo"}</code>
+      <code className="language-jsx">{"pnpm install dialux"}</code>
       <AnimatePresence mode="popLayout">
         {copied ? (
           <motion.button className="text-muted hover:text-foreground" {...variants.icon}>
@@ -53,7 +51,7 @@ const CodeBlock = () => {
           <motion.button className="text-muted hover:text-foreground" {...variants.icon}>
             <ClipboardIcon
               onClick={() => {
-                navigator.clipboard.writeText("pnpm install toldo");
+                navigator.clipboard.writeText("pnpm install dialux");
                 setCopied(true);
               }}
             />
@@ -71,7 +69,7 @@ const Source = () => {
     if (copied) {
       const timeout = setTimeout(() => {
         setCopied(false);
-        navigator.clipboard.writeText("https://github.com/raphaelsalaja/toldo");
+        navigator.clipboard.writeText("https://github.com/karthikmudunuri/dialux");
       }, 2000);
       return () => clearTimeout(timeout);
     }
@@ -79,7 +77,7 @@ const Source = () => {
 
   return (
     <pre className="flex h-[32px] items-center justify-between rounded-lg border border-gray-4 bg-gray-2 py-0 pr-2 pl-3">
-      <code className="language-jsx">{"raphaelsalaja/toldo"}</code>
+      <code className="language-jsx">{"karthikmudunuri/dialux"}</code>
       <AnimatePresence mode="popLayout">
         {copied ? (
           <motion.button className="text-muted hover:text-foreground" {...variants.icon}>
@@ -89,7 +87,7 @@ const Source = () => {
           <motion.button className="text-muted hover:text-foreground" {...variants.icon}>
             <ClipboardIcon
               onClick={() => {
-                navigator.clipboard.writeText("pnpm install toldo");
+                navigator.clipboard.writeText("pnpm install dialux");
                 setCopied(true);
               }}
             />
@@ -109,7 +107,7 @@ export const Showcase = () => {
       dialog: (
         <Dialog.StackContent className="flex max-h-[85vh] w-[90vw] flex-col overflow-hidden rounded-xl border border-gray-3 bg-gray-1 sm:w-[384px] ">
           <div className="flex flex-col gap-1 px-6 pt-6">
-            <Dialog.StackTitle className="font-medium text-large">Toldo</Dialog.StackTitle>
+            <Dialog.StackTitle className="font-medium text-large">dialux</Dialog.StackTitle>
             <Dialog.StackDescription className="text-default text-muted">
               An elevated dialog component for React applications.
             </Dialog.StackDescription>
@@ -131,7 +129,7 @@ export const Showcase = () => {
           <div className="flex justify-center border-gray-3 border-t bg-gray-2 px-6 py-3">
             <Dialog.StackAdd className="flex gap-1 text-small" dialogId="learn">
               <span className="text-muted">
-                A toldo is a sheet of cloth that stretches out from a door or window to keep the sun or rain off a shop
+                A dialux is a sheet of cloth that stretches out from a door or window to keep the sun or rain off a shop
                 or tent.
               </span>
             </Dialog.StackAdd>
@@ -195,7 +193,7 @@ export const Showcase = () => {
         dialogId="home"
         className="h-[32px] rounded-lg border border-gray-3 bg-gradient-to-t bg-gray-1 from-gray-1 to-gray-2 px-3 transition-all ease-in-out hover:brightness-95"
       >
-        Open Dialog
+        Open Showcase
       </Dialog.Trigger>
       <Dialog.Portal forceMount>
         <AnimatePresence>

@@ -1,7 +1,7 @@
 {
   "name": "dialux",
-  "description": "An enhanced dialog component library for React with multiple variants and modern styling",
-  "version": "1.0.0",
+  "description": "Beautifully crafted React dialog components with versatile variants and modern design.",
+  "version": "0.0.2",
   "scripts": {
     "build": "tsup index.tsx",
     "dev": "tsup index.tsx --watch --silent",
@@ -30,11 +30,11 @@
     "animated",
     "component-library"
   ],
-  "author": "",
+  "author": "karthikmudunuri",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/karthikmudunuri/dialux"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.2",

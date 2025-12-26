@@ -4,14 +4,14 @@
 
 # Introduction
 
-Toldo is an elevated dialog component built on top of [@radix-ui](https://www.radix-ui.com/primitives/docs/components/dialog) that provides a few extra features to make it easier to work with dialogs in your application.
+dialux is an elevated dialog component built on top of [@radix-ui](https://www.radix-ui.com/primitives/docs/components/dialog) that provides a few extra features to make it easier to work with dialogs in your application.
 
 # Installation
 
 Install the component from your command line.
 
 ```bash title="terminal"
-pnpm install toldo
+pnpm install dialux
 ```
 
 # Anatomy
@@ -50,14 +50,14 @@ export default () => (
 
 # Basic
 
-This example demonstrates the simplest use of Toldo's dialog component. This setup uses straightforward styles and functional controls to provide a basic dialog interaction.
+This example demonstrates the simplest use of dialux's dialog component. This setup uses straightforward styles and functional controls to provide a basic dialog interaction.
 
 <ComponentContainer codeblock="true">
   <BasicExample />
 </ComponentContainer>
 
 ```tsx title="basic.tsx" showLineNumbers
-import * as Dialog from "toldo";
+import * as Dialog from "dialux";
 
 export const Basic = () => {
   return (
@@ -75,7 +75,7 @@ export const Basic = () => {
           <fieldset className="mb-[15px] flex items-center gap-4 px-6 py-4">
             <input
               id="name"
-              placeholder="@raphaelsalaja"
+              placeholder="@karthikmudunuri"
               className="inline-flex h-[32px] w-full flex-1 items-center justify-center rounded-lg border border-gray-4 bg-gray-2 px-2.5 text-[15px] text-default leading-none transition-all placeholder:text-muted focus:outline-none focus:ring-1 focus:ring-green-11 focus:ring-offset-2 focus:ring-offset-gray-1"
             />
           </fieldset>
@@ -96,7 +96,7 @@ export const Basic = () => {
 
 # Basic with Animation
 
-In this example, we add animations to the basic dialog for a more engaging experience. Using Framer Motion, we apply smooth fade-in and scaling effects when the dialog opens and closes.
+In this example, we add animations to the basic dialog for a more engaging experience. Using  Motion, we apply smooth fade-in and scaling effects when the dialog opens and closes.
 
 In order for the animation presence to work, you need to make sure to mount the portal components when the dialog is open. This is done by setting the <Code>forceMount</Code> prop to <Code>true</Code> on the <Code>Dialog.Portal</Code> component.
 
@@ -107,9 +107,9 @@ In order for the animation presence to work, you need to make sure to mount the 
 ```tsx title="basic-with-animation.tsx" {8,30} showLineNumbers
 "use client";
 
-import { AnimatePresence, type AnimationProps, motion } from "framer-motion";
+import { AnimatePresence, type AnimationProps, motion } from "-motion";
 import React from "react";
-import * as Dialog from "toldo";
+import * as Dialog from "dialux";
 
 export const BasicWithAnimation = () => {
   const [open, setOpen] = React.useState(false);
@@ -158,7 +158,7 @@ export const BasicWithAnimation = () => {
                 <fieldset className="mb-[15px] flex items-center gap-4 px-6 py-4">
                   <input
                     id="name"
-                    placeholder="@raphaelsalaja"
+                    placeholder="@karthikmudunuri"
                     className="inline-flex h-[32px] w-full flex-1 items-center justify-center rounded-lg border border-gray-4 bg-gray-2 px-2.5 text-[15px] text-default leading-none transition-all placeholder:text-muted focus:outline-none focus:ring-1 focus:ring-green-11 focus:ring-offset-2 focus:ring-offset-gray-1"
                   />
                 </fieldset>
@@ -195,9 +195,9 @@ We use the <Code>Dialog.StackAdd</Code> and <Code>Dialog.StackRemove</Code> comp
 ```tsx title="stacked.tsx" showLineNumbers
 "use client";
 
-import { AnimatePresence, type AnimationProps, motion } from "framer-motion";
+import { AnimatePresence, type AnimationProps, motion } from "-motion";
 import { useState } from "react";
-import * as Dialog from "toldo";
+import * as Dialog from "dialux";
 
 export const Stacked = () => {
   const [open, setOpen] = useState(false);
@@ -216,7 +216,7 @@ export const Stacked = () => {
           <fieldset className="mb-[15px] flex items-center gap-4 px-6 py-5">
             <input
               id="name"
-              placeholder="@raphaelsalaja"
+              placeholder="@karthikmudunuri"
               className="inline-flex h-[32px] w-full flex-1 items-center justify-center rounded-lg border border-gray-4 bg-gray-2 px-2.5 text-[15px] text-default leading-none transition-all placeholder:text-muted focus:outline-none focus:ring-1 focus:ring-green-11 focus:ring-offset-2 focus:ring-offset-gray-1"
             />
           </fieldset>
@@ -247,7 +247,7 @@ export const Stacked = () => {
           <fieldset className="mb-[15px] flex items-center gap-4 px-6 py-5">
             <input
               id="email"
-              placeholder="raphaelsalaja@gmail.com"
+              placeholder="karthikmudunuri@gmail.com"
               className="inline-flex h-[32px] w-full flex-1 items-center justify-center rounded-lg border border-gray-4 bg-gray-2 px-2.5 text-[15px] text-default leading-none transition-all placeholder:text-muted focus:outline-none focus:ring-1 focus:ring-green-11 focus:ring-offset-2 focus:ring-offset-gray-1"
             />
           </fieldset>
@@ -341,8 +341,8 @@ export const Stacked = () => {
 
 # Shared Layout
 
-The <Code>Dialog.SharedItem</Code> component is a handy component to share animations between dialogs. It wraps Framer's <Code>motion.div</Code> layout into a more readable component.
-For more information on shared layout transitions, check out the docs on [Framer Motion](https://www.framer.com/motion/layout-animations/).
+The <Code>Dialog.SharedItem</Code> component is a handy component to share animations between dialogs. It wraps 's <Code>motion.div</Code> layout into a more readable component.
+For more information on shared layout transitions, check out the docs on [Motion](https://motion.dev/docs/react-layout-animations).
 
 <ComponentContainer codeblock="true">
   <SharedExample />
@@ -350,9 +350,9 @@ For more information on shared layout transitions, check out the docs on [Framer
 
 ```tsx title="shared.tsx" showLineNumbers
 "use client";
-import { AnimatePresence, type AnimationProps, motion } from "framer-motion";
+import { AnimatePresence, type AnimationProps, motion } from "-motion";
 import React from "react";
-import * as Dialog from "toldo";
+import * as Dialog from "dialux";
 
 export const Shared = () => {
   const [open, setOpen] = React.useState(false);
@@ -408,7 +408,7 @@ export const Shared = () => {
                 <fieldset className="mb-[15px] flex items-center gap-4 px-6 py-4">
                   <input
                     id="name"
-                    placeholder="@raphaelsalaja"
+                    placeholder="@karthikmudunuri"
                     className="inline-flex h-[32px] w-full flex-1 items-center justify-center rounded-lg border border-gray-4 bg-gray-2 px-2.5 text-[15px] text-default leading-none transition-all placeholder:text-muted focus:outline-none focus:ring-1 focus:ring-green-11 focus:ring-offset-2 focus:ring-offset-gray-1"
                   />
                 </fieldset>
@@ -1036,7 +1036,7 @@ A wrapper that holds the dialogs in a stack.
       typeDetails: (
         <span>
           <a
-            href="https://www.framer.com/motion/animation/"
+            href="https://www..com/motion/animation/"
             target="_blank"
             rel="noreferrer"
           >
@@ -1052,7 +1052,7 @@ A wrapper that holds the dialogs in a stack.
       typeDetails: (
         <span>
           <a
-            href="https://www.framer.com/motion/animation/"
+            href="https://www..com/motion/animation/"
             target="_blank"
             rel="noreferrer"
           >
@@ -1068,7 +1068,7 @@ A wrapper that holds the dialogs in a stack.
       typeDetails: (
         <span>
           <a
-            href="https://www.framer.com/motion/animation/"
+            href="https://www..com/motion/animation/"
             target="_blank"
             rel="noreferrer"
           >
@@ -1086,7 +1086,7 @@ A wrapper that holds the dialogs in a stack.
       typeDetails: (
         <span>
           <a
-            href="https://www.framer.com/motion/animation/"
+            href="https://www..com/motion/animation/"
             target="_blank"
             rel="noreferrer"
           >
@@ -1102,19 +1102,13 @@ A wrapper that holds the dialogs in a stack.
 
 Contains content to be rendered in the open dialog within a stack.
 
-<PropsTable data={[]} />
-
 # Stack Title
 
 An accessible title to be announced when the dialog is opened within a stack.
 
-<PropsTable data={[]} />
-
 # Stack Description
 
 An optional accessible description to be announced when the dialog is opened within a stack.
-
-<PropsTable data={[]} />
 
 # Stack Remove
 
@@ -1179,6 +1173,4 @@ A handy component to share animations between dialogs.
 Dialogs should be used sparingly and only when necessary. They can be disruptive to the user experience.
 
 When using dialogs, ensure that they are accessible to all users. This includes making sure that the dialog can be navigated using the keyboard, that focus is managed correctly, and that the dialog is announced to screen readers.
-
-When it comes to dialogs on mobile devices, consider using a full-screen modal instead of a dialog. This will provide a better user experience on smaller screens. Check out drawer components like [Vaul](https://vaul.emilkowal.ski/) by Emil for more information.
 

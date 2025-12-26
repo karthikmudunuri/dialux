@@ -1,4 +1,4 @@
-import * as Dialog from "toldo";
+import * as Dialog from "dialux";
 
 export const Basic = () => {
   return (
@@ -16,7 +16,7 @@ export const Basic = () => {
           <fieldset className="mb-[15px] flex items-center gap-4 px-6 py-4">
             <input
               id="name"
-              placeholder="@raphaelsalaja"
+              placeholder="@karthikmudunuri"
               className="inline-flex h-[32px] w-full flex-1 items-center justify-center rounded-lg border border-gray-4 bg-gray-2 px-2.5 text-[15px] text-default leading-none transition-all placeholder:text-muted focus:outline-none focus:ring-1 focus:ring-green-11 focus:ring-offset-2 focus:ring-offset-gray-1"
             />
           </fieldset>

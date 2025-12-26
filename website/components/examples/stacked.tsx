@@ -2,7 +2,7 @@
 
 import { AnimatePresence, type AnimationProps, motion } from "framer-motion";
 import { useState } from "react";
-import * as Dialog from "toldo";
+import * as Dialog from "dialux";
 
 export const Stacked = () => {
   const [open, setOpen] = useState(false);
@@ -21,7 +21,7 @@ export const Stacked = () => {
           <fieldset className="mb-[15px] flex items-center gap-4 px-6 py-5">
             <input
               id="name"
-              placeholder="@raphaelsalaja"
+              placeholder="@karthikmudunuri"
               className="inline-flex h-[32px] w-full flex-1 items-center justify-center rounded-lg border border-gray-4 bg-gray-2 px-2.5 text-[15px] text-default leading-none transition-all placeholder:text-muted focus:outline-none focus:ring-1 focus:ring-green-11 focus:ring-offset-2 focus:ring-offset-gray-1"
             />
           </fieldset>
@@ -52,7 +52,7 @@ export const Stacked = () => {
           <fieldset className="mb-[15px] flex items-center gap-4 px-6 py-5">
             <input
               id="email"
-              placeholder="raphaelsalaja@gmail.com"
+              placeholder="karthikmudunuri@gmail.com"
               className="inline-flex h-[32px] w-full flex-1 items-center justify-center rounded-lg border border-gray-4 bg-gray-2 px-2.5 text-[15px] text-default leading-none transition-all placeholder:text-muted focus:outline-none focus:ring-1 focus:ring-green-11 focus:ring-offset-2 focus:ring-offset-gray-1"
             />
           </fieldset>
@@ -127,7 +127,7 @@ export const Stacked = () => {
         dialogId="username"
         className="h-[32px] rounded-lg border border-gray-3 bg-gradient-to-t bg-gray-1 from-gray-1 to-gray-2 px-3 transition-all ease-in-out hover:brightness-95"
       >
-        Open Dialog
+        Open Stacked
       </Dialog.Trigger>
       <Dialog.Portal forceMount>
         <AnimatePresence>

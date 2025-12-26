@@ -1,15 +1,15 @@
-![Hero](https://github.com/raphaelsalaja/toldo/blob/main/.github/readme.png)
+![Hero](https://github.com/karthikmudunuri/dialux/blob/main/.github/readme.png)
 
- # Toldo ![NPM Version](https://img.shields.io/npm/v/toldo)
+ # dialux ![NPM Version](https://img.shields.io/npm/v/dialux)
 
-Toldo is an elevated dialog component built on top of [@radix-ui](https://www.radix-ui.com/primitives/docs/components/dialog) that provides a few extra features to make it easier to work with dialogs in your application.
+dialux is an elevated dialog component built on top of [@radix-ui](https://www.radix-ui.com/primitives/docs/components/dialog) that provides a few extra features to make it easier to work with dialogs in your application.
 
 # Install
 
 ```bash
-npm install toldo
+npm install dialux
 ```
 
 # Documentation
 
-Find the full API reference in the [documentation](https://toldo.vercel.app/).
+Find the full API reference in the [documentation](https://dialux.vercel.app/).

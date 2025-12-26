@@ -4,4 +4,4 @@ dist
 .DS_Store
 .idea
 .vscode
-
+.publish.md

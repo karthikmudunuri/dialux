@@ -5,23 +5,23 @@ import "@/styles.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Toldo",
+  title: "dialux",
   description: "A modal component for React",
   keywords: ["Dialog", "Modal", "React", "Component"],
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://toldo.vercel.app/",
-    title: "Toldo",
+    url: "https://dialux.vercel.app/",
+    title: "dialux",
     description: "A modal component for React",
-    images: ["https://toldo.vercel.app/og.png"],
-    siteName: "Toldo",
+    images: ["https://dialux.vercel.app/og.png"],
+    siteName: "dialux",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Toldo",
+    title: "dialux",
     description: "A modal component for React",
-    images: ["https://toldo.vercel.app/og.png"],
+    images: ["https://dialux.vercel.app/og.png"],
   },
   robots: {
     index: true,

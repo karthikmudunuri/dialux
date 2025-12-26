@@ -1,4 +1,4 @@
-import { Basic, BasicWithAnimation, Shared, Stacked } from "@/components/examples";
+import { Basic, BasicWithAnimation, Shared, Stacked , Showcase } from "@/components/examples";
 
 export default function Page() {
   return (
@@ -7,6 +7,7 @@ export default function Page() {
       <BasicWithAnimation />
       <Shared />
       <Stacked />
+      <Showcase />
     </div>
   );
 }

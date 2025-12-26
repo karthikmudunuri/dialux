@@ -1,7 +1,7 @@
 import { getDocumentation } from "@/lib/mdx";
 
 import { MDX } from "@/components/mdx";
-import toldo from "^/packages/toldo/package.json";
+import dialux from "^/packages/dialux/package.json";
 import { notFound } from "next/navigation";
 import React from "react";
 
@@ -27,11 +27,11 @@ export default async function Page() {
       <div className="flex flex-col">
         <div className="flex justify-between gap-2">
           <div className="flex flex-col gap-0 font-medium">
-            <div>Toldo</div>
+            <div>Dialux</div>
           </div>
           <div className="flex gap-2 text-muted">
             <a
-              href="https://github.com/raphaelsalaja/toldo"
+              href="https://github.com/karthikmudunuri/dialux"
               target="_blank"
               rel="noopener noreferrer"
               className={className}
@@ -39,17 +39,17 @@ export default async function Page() {
               Github
             </a>
             ―
-            <a href="https://x.com/raphaelsalaja" target="_blank" rel="noopener noreferrer" className={className}>
+            <a href="https://x.com/madebykarthik" target="_blank" rel="noopener noreferrer" className={className}>
               Twitter
             </a>
             ―
             <a
-              href="https://www.npmjs.com/package/toldo"
+              href="https://www.npmjs.com/package/dialux"
               target="_blank"
               rel="noopener noreferrer"
               className={className}
             >
-              {toldo.version}
+              {dialux.version}
             </a>
           </div>
         </div>

@@ -3,7 +3,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { AnimatePresence, type HTMLMotionProps, motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
-import * as Dialog from "toldo";
+import * as Dialog from "dialux";
 
 interface ContentProps extends HTMLMotionProps<"div"> {
   src: string;
