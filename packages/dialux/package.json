@@ -1,7 +1,7 @@
 {
   "name": "dialux",
   "description": "powerful and beautifully crafted React refined refined optimized polished enhanced refined improved polished polished optimized refined enhanced optimized enhanced optimized improved refined enhanced refined polished enhanced polished improved enhanced polished optimized polished polished optimized improved polished optimized dialog components with versatile variants and modern design.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
     "build": "tsup index.tsx",
     "dev": "tsup index.tsx --watch --silent",
@@ -18,25 +18,16 @@
   "files": [
     "dist"
   ],
-  "keywords": [
-    "react",
-    "modal",
-    "dialog",
-    "sheet",
-    "drawer",
-    "alert",
-    "confirm",
-    "overlay",
-    "motion",
-    "radix-ui",
-    "animated",
-    "component-library"
-  ],
-  "author": "karthikmudunuri",
+  "keywords": ["react", "modal", "motion", "dialog", "overlay"],
+  "author": "Karthik Mudunuri <karthikmudunuri999@gmail.com>",
   "license": "MIT",
+  "homepage": "https://dialux-package.vercel.app/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/karthikmudunuri/dialux"
+    "url": "git+https://github.com/karthikmudunuri/dialux.git"
+  },
+  "bugs": {
+    "url": "https://github.com/karthikmudunuri/dialux/issues"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.2",

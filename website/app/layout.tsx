@@ -11,17 +11,17 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://dialux.vercel.app/",
+    url: "https://dialux-package.vercel.app/",
     title: "dialux",
     description: "A modal component for React",
-    images: ["https://dialux.vercel.app/og.png"],
+    images: ["https://dialux-package.vercel.app/og.png"],
     siteName: "dialux",
   },
   twitter: {
     card: "summary_large_image",
     title: "dialux",
     description: "A modal component for React",
-    images: ["https://dialux.vercel.app/og.png"],
+    images: ["https://dialux-package.vercel.app/og.png"],
   },
   robots: {
     index: true,
